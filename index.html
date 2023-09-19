@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissors</title>
+    
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class="main-container">
+        <div class="logo">
+            Stone <br> Paper<br>
+            Scissors
+        </div >
+    <div class="scores">
+        <div class="score">
+           <p> Computer<br>Score</p>
+            <span id="computer_score">0</span>
+        </div>
+        <div class="scoree">
+           <p> Your<br>Score</p>
+            <span id="your_score">0</span>
+        </div>
+    </div>
+</div>
+    <section class="game"> 
+        <button class="button" data-choice="paper">
+            <div class="choice paper">
+                <img src="./assets/img-paper.png" alt="paper">
+            </div>
+        </button>
+        <button class="button" data-choice="stone">
+            <div class="choice stone">
+                <img src="./assets/img-stone.png" alt="stone">
+            </div>
+        </button>
+        <button class="button" data-choice="scissors">
+            <div class="choice scissors">
+                <img src="./assets/img-scissors.png" alt="scissors">
+            </div>
+        </button>
+    </section>
+    <section class="results hide">
+        <h2 class="results_heading">You Picked</h2>
+        <h2 class="results_heading">PC Picked</h2>
+        <div class="results_result"></div>
+        <div class="results_winner hide">
+            <div class="results_text"></div>
+            <button class="play-again">play again</button>
+          </div>
+        <div class="results_result winner"></div>
+    </section>
+    
+    <button class="rules-btn" tabindex="1">rules</button>
+    <div class="modal">
+        <div class="modal_container">
+            <div class="modal_header"> 
+                <h1>GAME RULES</h1>
+                <button class="close-button">
+                    <img class="close" src="./assets/X.png" alt="close">
+                </button>
+            </div>
+            <div class="modal_list">
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
